@@ -1,0 +1,1148 @@
+{
+    "taxon_prediction": [
+        {
+            "rank": "SPECIES",
+            "taxon": "Mycobacteroides abscessus",
+            "support": 100,
+            "taxonomy": "Actinomycetota > Actinomycetes > Mycobacteriales > Mycobacteriaceae > Mycobacteroides > Mycobacteroides abscessus"
+        }
+    ],
+    "fields": {
+        "rST": "31804",
+        "species": "Mycobacteroides abscessus",
+        "genus": "Mycobacteroides"
+    },
+    "exact_matches": {
+        "BACT000045": [
+            {
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1389
+                            }
+                        ]
+                    }
+                },
+                "length": 417,
+                "contig": "2",
+                "allele_id": "64",
+                "start": 359822,
+                "orientation": "reverse",
+                "end": 360238
+            }
+        ],
+        "BACT000033": [
+            {
+                "length": 657,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 1137,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "94",
+                "contig": "2",
+                "start": 362997,
+                "end": 363653,
+                "orientation": "reverse"
+            }
+        ],
+        "BACT000002": [
+            {
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1264
+                            }
+                        ]
+                    }
+                },
+                "length": 834,
+                "contig": "4",
+                "allele_id": "133",
+                "start": 203886,
+                "orientation": "reverse",
+                "end": 204719
+            }
+        ],
+        "BACT000036": [
+            {
+                "start": 423991,
+                "orientation": "reverse",
+                "end": 424380,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 205
+                            }
+                        ]
+                    }
+                },
+                "length": 390,
+                "contig": "2",
+                "allele_id": "1733"
+            }
+        ],
+        "BACT000034": [
+            {
+                "start": 354325,
+                "end": 354888,
+                "orientation": "reverse",
+                "length": 564,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1150
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "87",
+                "contig": "2"
+            }
+        ],
+        "BACT000040": [
+            {
+                "length": 429,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 756,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "1774",
+                "contig": "2",
+                "start": 443329,
+                "orientation": "reverse",
+                "end": 443757
+            }
+        ],
+        "BACT000062": [
+            {
+                "start": 446837,
+                "orientation": "reverse",
+                "end": 447004,
+                "length": 168,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 1180,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "81",
+                "contig": "2"
+            },
+            {
+                "start": 153043,
+                "orientation": "forward",
+                "end": 153207,
+                "length": 165,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 2246,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "22678",
+                "contig": "7"
+            }
+        ],
+        "BACT000011": [
+            {
+                "contig": "2",
+                "allele_id": "65",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 991
+                            }
+                        ]
+                    }
+                },
+                "length": 417,
+                "end": 325482,
+                "orientation": "reverse",
+                "start": 325066
+            }
+        ],
+        "BACT000046": [
+            {
+                "end": 323204,
+                "orientation": "reverse",
+                "start": 322659,
+                "contig": "2",
+                "allele_id": "1674",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 82
+                            }
+                        ]
+                    }
+                },
+                "length": 546
+            }
+        ],
+        "BACT000058": [
+            {
+                "start": 359586,
+                "end": 359822,
+                "orientation": "reverse",
+                "length": 237,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 521,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "1318",
+                "contig": "2"
+            }
+        ],
+        "BACT000043": [
+            {
+                "allele_id": "1549",
+                "contig": "2",
+                "length": 369,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 108,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "orientation": "reverse",
+                "end": 355574,
+                "start": 355206
+            }
+        ],
+        "BACT000035": [
+            {
+                "start": 347881,
+                "end": 348420,
+                "orientation": "reverse",
+                "length": 540,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1187
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "103",
+                "contig": "2"
+            }
+        ],
+        "BACT000018": [
+            {
+                "start": 153514,
+                "orientation": "forward",
+                "end": 153762,
+                "length": 249,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1490
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "77",
+                "contig": "7"
+            },
+            {
+                "start": 4061,
+                "end": 4315,
+                "orientation": "reverse",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1078
+                            }
+                        ]
+                    }
+                },
+                "length": 255,
+                "contig": "13",
+                "allele_id": "78"
+            }
+        ],
+        "BACT000030": [
+            {
+                "length": 708,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 479,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "2071",
+                "contig": "2",
+                "start": 442482,
+                "end": 443189,
+                "orientation": "reverse"
+            }
+        ],
+        "BACT000044": [
+            {
+                "start": 346153,
+                "end": 346593,
+                "orientation": "reverse",
+                "length": 441,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 602,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "1771",
+                "contig": "2"
+            }
+        ],
+        "BACT000051": [
+            {
+                "contig": "2",
+                "allele_id": "1662",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 89,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "length": 471,
+                "end": 361544,
+                "orientation": "reverse",
+                "start": 361074
+            }
+        ],
+        "BACT000015": [
+            {
+                "end": 116843,
+                "orientation": "reverse",
+                "start": 116574,
+                "allele_id": "93",
+                "contig": "4",
+                "length": 270,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1357
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "BACT000020": [
+            {
+                "orientation": "forward",
+                "end": 46175,
+                "start": 45915,
+                "contig": "1",
+                "allele_id": "70",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 2187
+                            }
+                        ]
+                    }
+                },
+                "length": 261
+            }
+        ],
+        "BACT000050": [
+            {
+                "end": 68375,
+                "orientation": "reverse",
+                "start": 68064,
+                "contig": "1",
+                "allele_id": "69",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1385
+                            }
+                        ]
+                    }
+                },
+                "length": 312
+            }
+        ],
+        "BACT000031": [
+            {
+                "allele_id": "2060",
+                "contig": "2",
+                "length": 837,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 131,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "orientation": "reverse",
+                "end": 362668,
+                "start": 361832
+            }
+        ],
+        "BACT000038": [
+            {
+                "allele_id": "111",
+                "contig": "13",
+                "length": 456,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 630,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "orientation": "reverse",
+                "end": 4043,
+                "start": 3588
+            }
+        ],
+        "BACT000010": [
+            {
+                "end": 364626,
+                "orientation": "reverse",
+                "start": 364321,
+                "allele_id": "84",
+                "contig": "2",
+                "length": 306,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1636
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "BACT000016": [
+            {
+                "start": 11714,
+                "end": 12190,
+                "orientation": "reverse",
+                "length": 477,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 135,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "1603",
+                "contig": "8"
+            }
+        ],
+        "BACT000009": [
+            {
+                "start": 302264,
+                "end": 302791,
+                "orientation": "reverse",
+                "length": 528,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 69,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "1801",
+                "contig": "2"
+            }
+        ],
+        "BACT000013": [
+            {
+                "length": 375,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1213
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "67",
+                "contig": "2",
+                "start": 325489,
+                "end": 325863,
+                "orientation": "reverse"
+            }
+        ],
+        "BACT000007": [
+            {
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 103
+                            }
+                        ]
+                    }
+                },
+                "length": 471,
+                "contig": "2",
+                "allele_id": "1771",
+                "start": 394773,
+                "end": 395243,
+                "orientation": "reverse"
+            }
+        ],
+        "BACT000053": [
+            {
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 638
+                            }
+                        ]
+                    }
+                },
+                "length": 318,
+                "contig": "2",
+                "allele_id": "1570",
+                "start": 354888,
+                "end": 355205,
+                "orientation": "reverse"
+            }
+        ],
+        "BACT000014": [
+            {
+                "start": 153209,
+                "end": 153514,
+                "orientation": "forward",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1382
+                            }
+                        ]
+                    }
+                },
+                "length": 306,
+                "contig": "7",
+                "allele_id": "52"
+            },
+            {
+                "start": 354138,
+                "orientation": "reverse",
+                "end": 354323,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 67
+                            }
+                        ]
+                    }
+                },
+                "length": 186,
+                "contig": "2",
+                "allele_id": "25466"
+            }
+        ],
+        "BACT000056": [
+            {
+                "length": 258,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 1385,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "92",
+                "contig": "1",
+                "start": 67793,
+                "orientation": "reverse",
+                "end": 68050
+            }
+        ],
+        "BACT000048": [
+            {
+                "orientation": "reverse",
+                "end": 9068,
+                "start": 8727,
+                "allele_id": "80",
+                "contig": "8",
+                "length": 342,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1260
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "BACT000047": [
+            {
+                "length": 408,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 929,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "71",
+                "contig": "2",
+                "start": 347471,
+                "end": 347878,
+                "orientation": "reverse"
+            }
+        ],
+        "BACT000049": [
+            {
+                "contig": "5",
+                "allele_id": "1762",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 68
+                            }
+                        ]
+                    }
+                },
+                "length": 390,
+                "end": 124717,
+                "orientation": "forward",
+                "start": 124328
+            }
+        ],
+        "BACT000001": [
+            {
+                "length": 1446,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 72
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "2598",
+                "contig": "5",
+                "start": 90797,
+                "end": 92242,
+                "orientation": "forward"
+            }
+        ],
+        "BACT000008": [
+            {
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 2037
+                            }
+                        ]
+                    }
+                },
+                "length": 399,
+                "contig": "2",
+                "allele_id": "73",
+                "start": 348434,
+                "orientation": "reverse",
+                "end": 348832
+            }
+        ],
+        "BACT000061": [
+            {
+                "start": 656014,
+                "orientation": "reverse",
+                "end": 656187,
+                "length": 174,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 1506,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "75",
+                "contig": "1"
+            }
+        ],
+        "BACT000039": [
+            {
+                "contig": "2",
+                "allele_id": "83",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1347
+                            }
+                        ]
+                    }
+                },
+                "length": 531,
+                "orientation": "reverse",
+                "end": 424966,
+                "start": 424436
+            }
+        ],
+        "BACT000012": [
+            {
+                "length": 375,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 2188,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "79",
+                "contig": "2",
+                "start": 395243,
+                "end": 395617,
+                "orientation": "reverse"
+            }
+        ],
+        "BACT000052": [
+            {
+                "contig": "2",
+                "allele_id": "83",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 1551,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "length": 303,
+                "orientation": "reverse",
+                "end": 362997,
+                "start": 362695
+            }
+        ],
+        "BACT000019": [
+            {
+                "contig": "2",
+                "allele_id": "58",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 1456,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "length": 282,
+                "end": 361822,
+                "orientation": "reverse",
+                "start": 361541
+            }
+        ],
+        "BACT000032": [
+            {
+                "length": 654,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 1202,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "101",
+                "contig": "2",
+                "start": 363653,
+                "end": 364306,
+                "orientation": "reverse"
+            }
+        ],
+        "BACT000003": [
+            {
+                "start": 360241,
+                "end": 361074,
+                "orientation": "reverse",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 69
+                            }
+                        ]
+                    }
+                },
+                "length": 834,
+                "contig": "2",
+                "allele_id": "1865"
+            }
+        ],
+        "BACT000017": [
+            {
+                "end": 359589,
+                "orientation": "reverse",
+                "start": 359272,
+                "allele_id": "1518",
+                "contig": "2",
+                "length": 318,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 69
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "BACT000006": [
+            {
+                "length": 291,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1437
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "90",
+                "contig": "13",
+                "start": 4942,
+                "end": 5232,
+                "orientation": "reverse"
+            }
+        ],
+        "BACT000064": [
+            {
+                "contig": "5",
+                "allele_id": "1457",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 200
+                            }
+                        ]
+                    }
+                },
+                "length": 195,
+                "end": 124265,
+                "orientation": "forward",
+                "start": 124071
+            }
+        ],
+        "BACT000004": [
+            {
+                "start": 324433,
+                "end": 325038,
+                "orientation": "reverse",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 117,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "length": 606,
+                "contig": "2",
+                "allele_id": "1931"
+            }
+        ],
+        "BACT000057": [
+            {
+                "allele_id": "20583",
+                "contig": "8",
+                "length": 198,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1580
+                            }
+                        ]
+                    }
+                },
+                "end": 68978,
+                "orientation": "forward",
+                "start": 68781
+            },
+            {
+                "start": 152807,
+                "end": 153043,
+                "orientation": "forward",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 119,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "length": 237,
+                "contig": "7",
+                "allele_id": "1430"
+            }
+        ],
+        "BACT000059": [
+            {
+                "end": 346775,
+                "orientation": "reverse",
+                "start": 346593,
+                "allele_id": "65",
+                "contig": "2",
+                "length": 183,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 2135,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "BACT000063": [
+            {
+                "contig": "13",
+                "allele_id": "66",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1428
+                            }
+                        ]
+                    }
+                },
+                "length": 144,
+                "orientation": "reverse",
+                "end": 64699,
+                "start": 64556
+            }
+        ],
+        "BACT000060": [
+            {
+                "start": 309242,
+                "end": 309466,
+                "orientation": "reverse",
+                "length": 225,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 589,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "allele_id": "81",
+                "contig": "1"
+            },
+            {
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 1223
+                            }
+                        ]
+                    }
+                },
+                "length": 243,
+                "contig": "7",
+                "allele_id": "24651",
+                "start": 151245,
+                "orientation": "reverse",
+                "end": 151487
+            }
+        ],
+        "BACT000042": [
+            {
+                "start": 302788,
+                "orientation": "reverse",
+                "end": 303231,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 82,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "length": 444,
+                "contig": "2",
+                "allele_id": "1747"
+            }
+        ],
+        "BACT000005": [
+            {
+                "start": 346768,
+                "end": 347430,
+                "orientation": "reverse",
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "value": "Mycobacteroides abscessus",
+                                "frequency": 194
+                            }
+                        ]
+                    }
+                },
+                "length": 663,
+                "contig": "2",
+                "allele_id": "1803"
+            }
+        ],
+        "BACT000065": [
+            {
+                "start": 326035,
+                "orientation": "reverse",
+                "end": 326148,
+                "linked_data": {
+                    "rMLST genome database": {
+                        "species": [
+                            {
+                                "frequency": 2246,
+                                "value": "Mycobacteroides abscessus"
+                            }
+                        ]
+                    }
+                },
+                "length": 114,
+                "contig": "2",
+                "allele_id": "42"
+            }
+        ]
+    },
+    "sample": "Muestra_1783"
+}

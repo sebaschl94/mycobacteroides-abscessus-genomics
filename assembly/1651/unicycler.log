@@ -1,0 +1,180 @@
+
+Starting Unicycler (2026-09-28 15:24:46)
+----------------------------------------
+    Welcome to Unicycler, an assembly pipeline for bacterial genomes. Since you provided only short reads, Unicycler will essentially function as a SPAdes-optimiser. It will try many k-mer sizes, choose the best based on contig length and graph connectivity, and scaffold the graph using SPAdes repeat resolution.
+    For more information, please see https://github.com/rrwick/Unicycler
+
+Command: /root/micromamba/envs/ensamblaje/bin/unicycler -1 /root/1651_S54_L001_R1_001_val_1.fq.gz -2 /root/1651_S54_L001_R2_001_val_2.fq.gz -o /root/ensamblaje_bacteriano_1651 --threads 4
+
+Unicycler version: v0.5.1
+Using 4 threads
+
+Making output directory:
+  /root/ensamblaje_bacteriano_1651
+
+Dependencies:
+  Program       Version   Status  
+  spades.py     4.3.0     good    
+  racon                   not used
+  makeblastdb   2.17.0+   good    
+  tblastn       2.17.0+   good    
+
+
+Choosing k-mer range for assembly (2026-09-28 15:24:48)
+-------------------------------------------------------
+    Unicycler chooses a k-mer range for SPAdes based on the length of the input reads. It uses a wide range of many k-mer sizes to maximise the chance of finding an ideal assembly.
+
+SPAdes maximum k-mer: 127
+Median read length: 145
+K-mer range: 27, 53, 71, 87, 99, 111, 119, 127
+
+
+SPAdes assemblies (2026-09-28 15:24:49)
+---------------------------------------
+    Unicycler now uses SPAdes to assemble the short reads. It scores the assembly graph for each k-mer using the number of contigs (fewer is better) and the number of dead ends (fewer is better). The score function is 1/(c*(d+2)), where c is the contig count and d is the dead end count.
+
+spades.py -o /root/ensamblaje_bacteriano_1651/spades_assembly -k 27 --threads 4 --gfa11 --isolate -1 /root/1651_S54_L001_R1_001_val_1.fq.gz -2 /root/1651_S54_L001_R2_001_val_2.fq.gz -m 1024
+
+spades.py -o /root/ensamblaje_bacteriano_1651/spades_assembly -k 27,53 --threads 4 --gfa11 --restart-from k27 -m 1024
+
+spades.py -o /root/ensamblaje_bacteriano_1651/spades_assembly -k 27,53,71 --threads 4 --gfa11 --restart-from k53 -m 1024
+
+spades.py -o /root/ensamblaje_bacteriano_1651/spades_assembly -k 27,53,71,87 --threads 4 --gfa11 --restart-from k71 -m 1024
+
+spades.py -o /root/ensamblaje_bacteriano_1651/spades_assembly -k 27,53,71,87,99 --threads 4 --gfa11 --restart-from k87 -m 1024
+
+spades.py -o /root/ensamblaje_bacteriano_1651/spades_assembly -k 27,53,71,87,99,111 --threads 4 --gfa11 --restart-from k99 -m 1024
+
+spades.py -o /root/ensamblaje_bacteriano_1651/spades_assembly -k 27,53,71,87,99,111,119 --threads 4 --gfa11 --restart-from k111 -m 1024
+
+spades.py -o /root/ensamblaje_bacteriano_1651/spades_assembly -k 27,53,71,87,99,111,119,127 --threads 4 --gfa11 --restart-from k119 -m 1024
+
+K-mer   Contigs   Dead ends   Score      
+   27                         too complex
+   53       361          80      3.38e-05
+   71       238          84      4.89e-05
+   87       227          97      4.45e-05
+   99        91         102      1.06e-04 <-best
+  111        94         114      9.17e-05
+  119        86         125      9.16e-05
+  127        87         127      8.91e-05
+
+Read depth filter: removed 5 contigs totalling 1351 bp
+Deleting /root/ensamblaje_bacteriano_1651/spades_assembly/
+
+
+Determining graph multiplicity (2026-09-28 15:27:33)
+----------------------------------------------------
+    Multiplicity is the number of times a sequence occurs in the underlying sequence. Single-copy contigs (those with a multiplicity of one, occurring only once in the underlying sequence) are particularly useful.
+
+Saving /root/ensamblaje_bacteriano_1651/002_depth_filter.gfa
+
+
+Cleaning graph (2026-09-28 15:27:33)
+------------------------------------
+    Unicycler now performs various cleaning procedures on the graph to remove overlaps and simplify the graph structure. The end result is a graph ready for bridging.
+
+Graph overlaps removed
+
+Removed zero-length segments:
+    89
+
+Saving /root/ensamblaje_bacteriano_1651/003_overlaps_removed.gfa
+
+    Unicycler now selects a set of anchor contigs from the single-copy contigs. These are the contigs which will be connected via bridges to form the final assembly.
+
+69 anchor segments (5,013,969 bp) out of 90 total segments (5,076,483 bp)
+
+
+Creating SPAdes contig bridges (2026-09-28 15:27:33)
+----------------------------------------------------
+    SPAdes uses paired-end information to perform repeat resolution (RR) and produce contigs from the assembly graph. SPAdes saves the graph paths corresponding to these contigs in the contigs.paths file. When one of these paths contains two or more anchor contigs, Unicycler can create a bridge from the path.
+
+                         Bridge
+Start    Path   End     quality
+   19           -47        62.2
+
+
+Creating loop unrolling bridges (2026-09-28 15:27:33)
+-----------------------------------------------------
+    When a SPAdes contig path connects an anchor contig with the middle contig of a simple loop, Unicycler concludes that the sequences are contiguous (i.e. the loop is not a separate piece of DNA). It then uses the read depth of the middle and repeat contigs to guess the number of times to traverse the loop and makes a bridge.
+
+No loop unrolling bridges made
+
+
+Applying bridges (2026-09-28 15:27:33)
+--------------------------------------
+    Unicycler now applies to the graph in decreasing order of quality. This ensures that when multiple, contradictory bridges exist, the most supported option is used.
+
+Bridge type   Start -> end   Path   Quality
+SPAdes          19 -> -47            62.155
+
+Saving /root/ensamblaje_bacteriano_1651/004_bridges_applied.gfa
+
+
+Bridged assembly graph (2026-09-28 15:27:33)
+--------------------------------------------
+    The assembly is now mostly finished and no more structural changes will be made. Ideally the assembly graph should now have one contig per replicon and no erroneous contigs (i.e. a complete assembly). If there are more contigs, then the assembly is not complete.
+
+Saving /root/ensamblaje_bacteriano_1651/005_final_clean.gfa
+
+Component   Segments   Links   Length      N50       Longest segment   Status    
+    total         79      39   5,048,039   112,277           471,907             
+        1          1       0     471,907   471,907           471,907   incomplete
+        2         11      11     730,240   394,773           394,773   incomplete
+        3          8       7     623,228   161,248           257,184   incomplete
+        4          9       8     570,439   112,277           197,897   incomplete
+        5          1       0     184,850   184,850           184,850   incomplete
+        6          1       0     158,284   158,284           158,284   incomplete
+        7          5       4     326,910    88,431           144,051   incomplete
+        8          1       0     124,836   124,836           124,836   incomplete
+        9          3       2     209,172   113,394           113,394   incomplete
+       10          1       0     104,984   104,984           104,984   incomplete
+       11          1       0      93,220    93,220            93,220   incomplete
+       12          1       0      92,167    92,167            92,167   incomplete
+       13          1       0      91,770    91,770            91,770   incomplete
+       14          1       0      81,758    81,758            81,758   incomplete
+       15          1       0      80,552    80,552            80,552   incomplete
+       16          1       0      74,998    74,998            74,998   incomplete
+       17          1       0      74,087    74,087            74,087   incomplete
+       18          1       0      73,951    73,951            73,951   incomplete
+       19          1       0      63,487    63,487            63,487   incomplete
+       20          1       0      57,340    57,340            57,340   incomplete
+       21          1       0      53,015    53,015            53,015   incomplete
+       22          6       6     101,283    52,738            52,738   incomplete
+       23          1       0      51,661    51,661            51,661   incomplete
+       24          1       0      49,093    49,093            49,093   incomplete
+       25          1       0      47,444    47,444            47,444   incomplete
+       26          1       0      47,060    47,060            47,060   incomplete
+       27          1       0      46,390    46,390            46,390   incomplete
+       28          1       0      39,451    39,451            39,451   incomplete
+       29          1       0      37,357    37,357            37,357   incomplete
+       30          1       0      36,657    36,657            36,657   incomplete
+       31          1       0      36,126    36,126            36,126   incomplete
+       32          1       0      32,938    32,938            32,938   incomplete
+       33          1       0      30,288    30,288            30,288   incomplete
+       34          1       0      26,124    26,124            26,124   incomplete
+       35          1       0      20,535    20,535            20,535   incomplete
+       36          1       0      18,392    18,392            18,392   incomplete
+       37          1       1      18,117    18,117            18,117     complete
+       38          1       0      16,222    16,222            16,222   incomplete
+       39          1       0      14,217    14,217            14,217   incomplete
+       40          1       0      11,262    11,262            11,262   incomplete
+       41          1       0       9,731     9,731             9,731   incomplete
+       42          1       0       9,334     9,334             9,334   incomplete
+       43          1       0       7,162     7,162             7,162   incomplete
+
+
+Rotating completed replicons (2026-09-28 15:27:33)
+--------------------------------------------------
+    Any completed circular contigs (i.e. single contigs which have one link connecting end to start) can have their start position changed without altering the sequence. For consistency, Unicycler now searches for a starting gene (dnaA or repA) in each such contig, and if one is found, the contig is rotated to start with that gene on the forward strand.
+
+Segment   Length   Depth   Starting gene   Position   Strand   Identity   Coverage
+     59   18,117   2.25x   none found                                             
+
+
+Assembly complete (2026-09-28 15:27:44)
+---------------------------------------
+Saving /root/ensamblaje_bacteriano_1651/assembly.gfa
+Saving /root/ensamblaje_bacteriano_1651/assembly.fasta
+
